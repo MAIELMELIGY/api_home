@@ -17,7 +17,9 @@ SECRET_KEY = 'django-insecure-5%i)hi$$&zs@282ecrt*t*$fcmqod%j^9!-k^@hnbdi^$j2au3
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['apihomeautomation.herokuapp.com', '127.0.0.1']
+# ALLOWED_HOSTS = ['apihomeautomation.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
