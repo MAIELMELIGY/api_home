@@ -1,2 +1,2 @@
-gunicorn project.wsgi:application --log-file - --log-level debug
+gunicorn apihomeautomation.wsgi:application --log-file - --log-level debug
 
