@@ -1,2 +1,1 @@
-gunicorn apihomeautomation.wsgi:application --log-file - --log-level debug
-
+web: gunicorn locallibrary.wsgi --log-file -
