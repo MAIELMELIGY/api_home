@@ -18,8 +18,8 @@ SECRET_KEY = 'django-insecure-5%i)hi$$&zs@282ecrt*t*$fcmqod%j^9!-k^@hnbdi^$j2au3
 DEBUG =True
 
 
-#ALLOWED_HOSTS = ['apihomeautomation.herokuapp.com', '127.0.0.1:8000','197.59.33.53']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["apihomeautomation.herokuapp.com", "localhost", "192.168.0.121", "127.0.0.1"]
+
 
 
 
@@ -50,9 +50,9 @@ MIDDLEWARE = [
 
 ]
 
-""" CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
-] """
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:3000','https://homeautomationfront.herokuapp.com/','http://homeautomationfront.herokuapp.com/'
+] 
 ROOT_URLCONF = 'project.urls'
 
 
@@ -147,7 +147,7 @@ import os
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR / 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
