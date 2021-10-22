@@ -28,7 +28,7 @@ admin.site.index_title = 'Home automation adminstrations'
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('homeadmin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/Contactus/',views.ContactCreateView.as_view(),name='contactus'),
 

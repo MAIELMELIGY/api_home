@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000','https://homeautomationfront.herokuapp.com/','http://homeautomationfront.herokuapp.com/'
+     'http://localhost:3000','https://homeautomationfront.herokuapp.com','http://homeautomationfront.herokuapp.com'
 ] 
 ROOT_URLCONF = 'project.urls'
 
