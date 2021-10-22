@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-5%i)hi$$&zs@282ecrt*t*$fcmqod%j^9!-k^@hnbdi^$j2au3
 DEBUG =True
 
 
-ALLOWED_HOSTS = ["apihomeautomation.herokuapp.com", "localhost", "192.168.0.121", "127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 
 
 
@@ -51,13 +51,14 @@ MIDDLEWARE = [
 
 ]
 
-CORS_ORIGIN_WHITELIST = [
+""" CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
      'https://fronthome.herokuapp.com',
      'http://fronthome.herokuapp.com',
 ] 
 CORS_ALLOW_CREDENTIALS = True
-
+ """
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'project.urls'
 
 
