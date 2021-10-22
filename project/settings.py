@@ -51,14 +51,13 @@ MIDDLEWARE = [
 
 ]
 
-""" CORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN__ORIGINS = [
      'http://localhost:3000',
      'https://fronthome.herokuapp.com',
      'http://fronthome.herokuapp.com',
 ] 
-CORS_ALLOW_CREDENTIALS = True
- """
-CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_ALLOW_ALL = False
 ROOT_URLCONF = 'project.urls'
 
 
